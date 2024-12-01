@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bruno Obradovic</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bruno Obradovic</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Dizajn bez naslova.png" alt="Bruno's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 heading">Hello, I'm</p>
+        <h1 class="title">Bruno</h1>
+        <p class="section__text__p2 heading">QA Engineer</p>
+        <p>Welcome to my page! I’m glad you stopped by.</p>
+        <br />
+        <p>
+          I created this page to provide you with a clear understanding of my
+          contributions to past projects. Feel free to navigate through the
+          different sections to get a deeper look at my expertise.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://app.enhancv.com/share/b902d313/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic')"
+          >
+            Download Resume
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('https://github.com/DoomCoder0/brunos')"
+          >
+            Visit GitHub
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Here Is Some Information</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Dizajn bez naslova (2).png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <div class="text-about">
+              <p>
+                I am a dedicated and detail-oriented QA Engineer with a passion for ensuring software quality and user satisfaction.
+                With extensive experience in manual and automated testing, I specialize in identifying bugs, improving processes, and
+                ensuring seamless product delivery. My expertise spans across functional, performance, and regression testing, ensuring
+                robust and scalable solutions.
+              </p>
+              <p>
+                I bring strong problem-solving skills, excellent communication, and a
+                commitment to delivering impeccable results for every project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-content">
+        <div class="experience-details-container">
+          <div class="details-container">
+            <h2>Technical Skills</h2>
+            <div class="inline-section">
+              <h3>Languages</h3>
+              <p>JavaScript, Python, TypeScript, HTML, CSS, SQL</p>
+            </div>
+            <div class="inline-section">
+              <h3>Test Automation</h3>
+              <p>Playwright, Selenium WebDriver, WebdriverIO, Pytest, Jest, Mocha</p>
+            </div>
+            <div class="inline-section">
+              <h3>Developer Tools</h3>
+              <p>Git, GitHub, Chrome DevTools, Visual Studio Code, PyCharm</p>
+            </div>
+            <div class="inline-section">
+              <h3>Testing Tools</h3>
+              <p>Postman, Jira, Android Studio, Charles Proxy, DrivT, JMeter</p>
+            </div>
+            <div class="inline-section">
+              <h3>Types of Testing</h3>
+              <p>UI Testing, API Testing, Smoke Testing, Regression Testing, Exploratory Testing, Test Automation, Manual Testing, etc.</p>
+            </div>
+          </div>
+          
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">See My Recent</p>
+      <h1 class="title">Test Automation Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Swag Labs</h2>
+            <p class="project-description">Selenium WebDriver</p>
+            <p class="project-description">Python, Pytest</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/natashabag/SwagLabs')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Snimka zaslona 2024-12-01 130405.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ecommeerce website</h2>
+            <p class="project-description">Selenium WebDriver</p>
+            
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https:https://github.com/DoomCoder0/Ecommerceselenium')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cookie.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cookie Clicker Website</h2>
+            <p class="project-description">Selenium WebDriver</p>
+            <p class="project-description">Python, Pytest</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https:https:https://github.com/DoomCoder0/CookieClicker')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#manual-projects'"
+      />
+    </section>
+    <section id="manual-projects">
+      <p class="section__text__p1">I am Happy To Share</p>
+      <h1 class="title">Manual Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/545.jpg"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Arena Sport Centar, Mobile, API
+            </h2>
+            <p class="project-description">
+              Wrote and executed 200+ tests; assured integration and performance
+              across mobile app, database, and website
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Emulated mobile devices in Android Studio and identified critical
+              defects in the mobile app
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Demonstrated expertise in SQL and command line; verified seamless
+              backend functionality
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/7.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Urban Grocers Web App API
+            </h2>
+            <p class="project-description">
+              Created from scratch 140+ test scenarios to ensure thorough test
+              coverage and product reliability
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Identified and documented 45+ critical API defects using Postman,
+              leading to improved functionality
+            </p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Urban Lunch Mobile App
+            </h2>
+            <p class="project-description">
+              Crafted an exhaustive testing checklist utilizing app
+              documentation; evaluated software functionality
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Emulated mobile devices in Android Studio and identified critical
+              defects in the mobile app
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:obradovicbruno5@gmail.com"
+              >obradovicbruno5@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/bruno-obradovic-99a8b4224/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-two.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
